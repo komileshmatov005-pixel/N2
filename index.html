@@ -446,8 +446,7 @@
             btn.innerText = "YUBORILMOQDA...";
             
             // O'ZINGIZNING GOOGLE SCRIPT URL'INGIZNI QO'YING
-            const scriptURL = 'https://docs.google.com/spreadsheets/d/1cNppA9eDxFNJfOyycb9VauDKc7K35L1nEGCa8nMHsf4/edit?usp=drivesdk; 
-
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwHR-kKB8i5kZ91WvlQlITHn8DQBnp0eEiEKkbsdYrG8b4lXLBZmmAbGdoglSNRFesSzg/exec';
             fetch(scriptURL, { method: 'POST', body: new FormData(this)})
             .then(response => {
                 this.style.display = 'none';
